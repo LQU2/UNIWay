@@ -1,0 +1,68 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Inter', sans-serif;
+}
+
+.map-container {
+    height: 70vh; /* Adjusted to 70% of the viewport height */
+    width: 100%;
+    background: #eaeaea; /* A background color in case the iframe loads slowly */
+}
+
+.mappedin-map {
+    width: 100%;
+    height: 100%; /* Fill the container */
+    border: none;
+}
+
+.login-container {
+    height: 30vh; /* Adjusted to 30% of the viewport height */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center the login form */
+    background: #f8f8f8; /* Light background for the login area */
+}
+
+.login-modal {
+    width: 320px;
+    padding: 20px;
+    text-align: center;
+}
+
+.login-title {
+    color: #333;
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.input-label {
+    display: block;
+    margin-top: 10px;
+    color: #333;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.text-input {
+    width: calc(100% - 20px);
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.account-creation {
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+.create-account-link {
+    color: #0066cc;
+    text-decoration: underline;
+}
