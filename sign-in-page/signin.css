@@ -6,7 +6,7 @@ body, html {
 }
 
 .map-container {
-    height: 70vh; /* Adjusted to 70% of the viewport height */
+    height: 60vh; /* Adjusted to 70% of the viewport height */
     width: 100%;
     background: #eaeaea; /* A background color in case the iframe loads slowly */
 }
@@ -18,7 +18,7 @@ body, html {
 }
 
 .login-container {
-    height: 30vh; /* Adjusted to 30% of the viewport height */
+    height: 40vh; /* Adjusted to 30% of the viewport height */
     width: 100%;
     display: flex;
     justify-content: center;

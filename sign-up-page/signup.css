@@ -1,0 +1,97 @@
+/* Ensure full height of the page and reset default styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Container for the map and form to split the screen */
+.split-container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+/* Styling for the map container */
+.map-container {
+    flex: 1; /* Take up half the space */
+    background: #eaeaea; /* Placeholder in case the map is slow to load */
+}
+
+/* Styling for the iframe containing the map */
+.mappedin-map {
+    width: 100%;
+    height: 100%; /* Take up all available space */
+    border: none;
+}
+
+/* Container for the form section */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the start of the container */
+    padding: 2rem; /* Add some padding */
+    padding-left: 0; /* No padding on the left side */
+    padding-right: 0; /* No padding on the right side */
+    box-sizing: border-box;
+    width: 100%; /* Full width of the container */
+    max-width: 500px; /* Control the maximum width */
+    margin: auto; /* Center the form container in the available space */
+}
+
+
+/* Styling for form headers */
+.form-container h2 {
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 1rem;
+    width: 100%; 
+    text-align: center; /* Center the header text */
+}
+
+
+/* Styling for form labels */
+.form-container label {
+    font-size: 18px;
+    color: #333333;
+    margin-bottom: 0.25rem;
+    display: block; /* Ensure the label is a block-level element */
+    text-align: left; /* Align the text to the left */
+    width: 100%; /* Full width to align with the inputs */
+    max-width: 300px; /* Match the width of the input fields if needed */
+    margin-left: auto; /* Align label to the center with inputs */
+    margin-right: auto; /* Align label to the center with inputs */
+} 
+
+/* Styling for form input fields */
+.form-container input {
+    font-size: 14px;
+    color: #555555;
+    padding: 0.5rem;
+    margin-bottom: 1rem; /* Space between input fields */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%; /* Input fields take full width of the form container */
+    max-width: 300px; /* Maximum width of input fields */
+    margin-left: auto; /* Center input fields within form container */
+    margin-right: auto; /* Center input fields within form container */
+}
+
+
+
+/* Styling for link to switch to account creation */
+.form-container .account-link {
+    color: #0066cc;
+    text-decoration: underline;
+    cursor: pointer;
+    align-self: center; /* Center the link horizontally */
+    margin-top: 1rem; /* Space above the link */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .split-container {
+        flex-direction: column; /* Stack the map and form on smaller screens */
+    }
+}
