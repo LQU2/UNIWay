@@ -12,34 +12,33 @@
         </a>
         
     </header>
-    
-    <nav class="contribution-menu">
-        <button class="menu-item">Edit Map</button>
-        <button class="menu-item">Add Place</button>
-        <button class="menu-item">Add Review</button>
-        <button class="menu-item">Add Photo</button>
-    </nav>
-    
     <div class="container">
-        <section class="recently-visited">
-            <h2>Recently Visited</h2>
-            <div class="place">
-                <h3>LSI 1416</h3>
-                <div class="stars" data-rating="0">☆☆☆☆☆</div>
-                <a href="../search.html" class="container">
-                    <button class="skip-button">Skip</button>
-                </a>
-
+        <div class="navigation">
+            <h1>Contribute</h1>
+            <div class="action-buttons">
+                <button class="action-btn">Edit Map</button>
+                <button class="action-btn">Add Place</button>
+                <button class="action-btn">Add Review</button>
+                <button class="action-btn">Add Photo</button>
             </div>
-            <!-- Repeat for other places -->
-        </section>
-        
-        <section class="your-reviews">
-            <h2>Your Reviews</h2>
-            <textarea class="review-box" placeholder="Your review..."></textarea>
-        </section>
-    </div>
-
+        </div>
+        <div class="content">
+            <section class="recently-visited">
+                <h2>Recently Visited</h2>
+                <div class="place">
+                    <span>LSI 1416</span>
+                    <div class="stars" data-rating="0" onclick="rate(this, event)">☆☆☆☆☆</div>
+                    <button class="skip-button">Skip</button>
+                </div>
+                <!-- Repeat for other places -->
+            </section>
+            
+            <section class="your-reviews">
+                <h2>Your Reviews</h2>
+                <textarea class="review-box" placeholder="Your review..."></textarea>
+            </section>
+        </div>
+    
     <script src="stars.js"></script>
-</body>
+
 </html>

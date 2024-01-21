@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <div class="profile-container">
+        <a href="../search.html" class="contribute-header">
+            <button class="back-button">←</button>
+        </a>
+        <!-- <div class="back-arrow">&larr; Profile</div> -->
+        <div class="user-info">
+            <div class="user-image"></div>
+            <h2>Display Name</h2>
+            <input type="text" placeholder="Display Name">
+        </div>
+        <div class="accessibility-section">
+            <h3>Accessibility Needs</h3>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider"></span> Wheelchair Accessible
+            </label>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider"></span> Instruction read aloud
+            </label>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider"></span> Moderate inclines
+            </label>
+        </div>
+        <div class="visibility-section">
+            <h3>Visibility Preferences</h3>
+            <label class="switch">
+                <input type="checkbox" id="night-mode-toggle">
+                <span class="slider"></span> Night Mode
+            </label>
+            <label class="switch">
+                <input type="checkbox" id="large-text-toggle">
+                <span class="slider"></span> Large Text
+            </label>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider"></span> Monotone Colours
+            </label>
+        </div>
+    </div>
+    <script src="sliders.js"></script>
+</body>
+</html>

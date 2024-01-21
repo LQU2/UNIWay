@@ -1,0 +1,102 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.profile-container {
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.back-arrow {
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.user-info {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.user-image {
+    background-image: url('../../blankAvatar.png'); /* Replace with the actual image path */
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+}
+
+.user-info h2,
+.accessibility-section h3,
+.visibility-section h3 {
+    margin: 10px 0;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+/* Existing styles ... */
+
+.switch {
+    position: relative;
+    display: flex;
+    align-items: center; /* Center the label text with the toggle */
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    user-select: none;
+}
+
+/* The slider background */
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: relative;
+    background-color: #ccc;
+    height: 34px;
+    width: 60px; /* Width of the slider */
+    border-radius: 34px;
+    margin-right: 10px; /* Space between the slider and the label text */
+    transition: background-color 0.4s;
+}
+
+/* The slider knob */
+.slider:before {
+    content: "";
+    position: absolute;
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: transform 0.4s;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for the knob */
+}
+
+/* The look of the slider when the switch is checked */
+input:checked + .slider {
+    background-color: #128387; /* The color you provided */
+}
+
+input:checked + .slider:before {
+    transform: translateX(30px); /* Move the knob to the end of the slider */
+}

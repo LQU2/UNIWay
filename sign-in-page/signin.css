@@ -6,10 +6,24 @@ body, html {
 }
 
 .map-container {
-    height: 100vh; /* Adjusted to 70% of the viewport height */
+    height: 50vh; /* Adjusted to 70% of the viewport height */
     width: 100%;
     background: #eaeaea; /* A background color in case the iframe loads slowly */
+    opacity: 0.5; /* Add opacity to make the map more opaque */
+    position: relative; /* Needed to position the overlay if used */
 }
+
+/* Add this if you want to use an overlay instead of opacity */
+.map-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.5); /* White color overlay with 50% opacity */
+    z-index: 1; /* Above the map but below the login form */
+}
+
 
 .mappedin-map {
     width: 100%;
@@ -23,20 +37,30 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center; /* Center the login form */
-    background: #f8f8f8; /* Light background for the login area */
+     /* Light background for the login area */
+    position: absolute; /* To position the login form above the map */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the form on the screen */
+    z-index: 2; /* Ensures the form is above the map and overlay */
+}
+.uniway-logo {
+    max-width: 250px; /* Adjust as needed */
+    margin-bottom: 20px;
 }
 
 .login-modal {
     width: 320px;
-    padding: 20px;
+    padding: 50px;
     text-align: center;
 }
+
 
 .login-title {
     color: #333;
     font-size: 30px;
     font-weight: 400;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .input-label {
