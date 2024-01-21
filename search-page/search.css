@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Reset default styles and ensure full height of the page */
 html, body {
     height: 100%;
@@ -112,3 +113,95 @@ html, body {
         gap: 5px; /* Smaller gap on small screens */
     }
 }
+=======
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Inter', sans-serif;
+}
+
+.map-container {
+    height: 100vh; /* Adjusted to 70% of the viewport height */
+    width: 100%;
+    background: #eaeaea; /* A background color in case the iframe loads slowly */
+}
+
+.mappedin-map {
+    width: 100%;
+    height: 100%; /* Fill the container */
+    border: none;
+}
+
+ #favourites {  
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    margin-left: -50px;
+    width: 300px;
+    background: #eee;
+    padding: 20px;
+  }
+  
+  .favouritesContainer:hover #favourites {  
+    /* display: block; */
+    display: inline-block;
+    position: absolute;
+    top: 25px;
+    left: 15%;
+    margin-left: -150px;
+    width: 300px;
+    background: #eee;
+    padding: 20px;
+  }
+
+  #profile {  
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    margin-left: -150px;
+    width: 300px;
+    background: #eee;
+    padding: 20px;
+  }
+  
+  .profileContainer:hover #profile {  
+    /* display: block; */
+    display: inline-block;
+    position: absolute;
+    top: 25px;
+    left: 15%;
+    margin-left: -150px;
+    width: 300px;
+    background: #eee;
+    padding: 20px;
+  }
+
+  #chng {  
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 70%;
+    margin-left: -150px;
+    width: 300px;
+    background: #eee;
+    padding: 20px;
+  }
+  
+  .changeImageContainer:hover #chng {  
+    /* display: block; */
+    display: inline-block;
+    position: absolute;
+    top: 25px;
+    left: 40%;
+    margin-left: -150px;
+    width: 300px;
+    background: #eee;
+    padding: 20px;
+  }
+
+
+
+>>>>>>> e10a7c6969cc645ecb4bfe7fe51589f0fe28ff09
