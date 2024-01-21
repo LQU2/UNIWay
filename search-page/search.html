@@ -26,11 +26,21 @@
     <div class="favouritesContainer">
         <button>Favourites</button>
         <div id="favourites" title="Basic dialog">
-          <p>Wowie you love the Iona building!</p>
+          <a href="../Favourites-page/favourites.html"  class="login-button-link">
+            <button type="submit" id="login-button" class="login-button">→</button>
+        </a>
         </div>
     </div>
 
-    <iframe class="mappedin-map" src="https://maker.mappedin.com/map/65ac9b8aca641a9a1399dc6b?embedded=true" title="Mappedin Map"></iframe>
+    <iframe id = "testid" class="mappedin-map" src="https://maker.mappedin.com/map/65ac9b8aca641a9a1399dc6b?embedded=true" title="Mappedin Map"></iframe>
+
+    <!-- <script>
+      const myIframe = document.getElementById("testid");
+      const divElement = myIframe.contentWindow.document.querySelector('#div');
+      const newElement = document.createElement('button');
+      newElement.innerHTML="New Button Element";
+      divElement.appendChild(newElement);
+      </script> -->
 
 
 
