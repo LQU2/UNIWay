@@ -6,7 +6,7 @@ body, html {
 }
 
 .map-container {
-    height: 60vh; /* Adjusted to 70% of the viewport height */
+    height: 55vh; /* Adjusted to 70% of the viewport height */
     width: 100%;
     background: #eaeaea; /* A background color in case the iframe loads slowly */
 }
@@ -18,7 +18,7 @@ body, html {
 }
 
 .login-container {
-    height: 40vh; /* Adjusted to 30% of the viewport height */
+    height: 45vh; /* Adjusted to 30% of the viewport height */
     width: 100%;
     display: flex;
     justify-content: center;
@@ -62,7 +62,52 @@ body, html {
     font-size: 12px;
 }
 
+/* Styling for the login button link */
+.login-button-link {
+    text-decoration: none; /* Remove underline from links */
+    display: inline-block; /* Allows the wrapping anchor to be sized by its content */
+    margin-top: 1rem; /* Space above the button */
+    margin-left: auto; /* Center the button */
+    .login-button {
+        font-size: 0; /* Hide the text */
+        color: white;
+        background-color: #128387; /* Replace with the exact color code of your button */
+        border: none;
+        border-radius: 40px; /* Adjust as needed to match your button's curvature */
+        padding: 15px 30px; /* Adjust padding to match your button size */
+        cursor: pointer;
+        display: inline-block; /* Allows the button to wrap its content */
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2); /* Adjust or remove shadow as necessary */
+        -webkit-appearance: none; /* Removes default browser styling */
+        -moz-appearance: none; /* Removes default browser styling */
+        appearance: none; /* Removes default browser styling */
+
+        /* Using a pseudo-element for the arrow icon */
+        position: relative; /* Position relative to allow absolute positioning inside */
+        /*margin-left: 250px; /* Add margin to push the button slightly to the right */
+    }
+
+    /* Pseudo-element for the arrow */
+    .login-button::after {
+        content: '→'; /* Your arrow character */
+        font-size: 25px; /* Adjust as needed */
+        position: absolute;
+        top: 45%;
+        right: 17px; /* Adjust as needed */
+        transform: translateY(-50%);
+    }
+}
+
+/* Hover effect for the button */
+.login-button:hover {
+    background-color: #0055bb; /* Slightly darker blue on hover */
+}
+
+
+
+
 .create-account-link {
     color: #0066cc;
     text-decoration: underline;
 }
+
