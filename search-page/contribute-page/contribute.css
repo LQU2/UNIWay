@@ -1,0 +1,51 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background: #f4f4f4;
+}
+
+.content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.contribution-menu {
+    display: flex;
+    justify-content: center; /* This centers the buttons horizontally */
+    gap: 10px; /* This adds space between the buttons */
+    margin-top: 20px; /* Add space above the navigation buttons */
+}
+
+.recently-visited, .your-reviews {
+    background: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+}
+
+.stars {
+    cursor: pointer;
+    color: gray;
+}
+
+.stars[data-rating="1"] { color: #AD468F; }
+.stars[data-rating="2"] { color: #AD468F; }
+.stars[data-rating="3"] { color: #AD468F; }
+.stars[data-rating="4"] { color: #AD468F;}
+.stars[data-rating="5"] { color: #AD468F;}
+
+.review-box {
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+}
+
+.skip-button {
+    float: right;
+    margin-top: -10px;
+    margin-right: 10px;
+    background: #AD468F;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}

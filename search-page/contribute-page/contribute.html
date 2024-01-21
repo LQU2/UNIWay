@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contribute Page</title>
+    <link rel="stylesheet" href="contribute.css"> <!-- Link to your external CSS file -->
+</head>
+<body>
+    <header class="contribute-header">
+        <a href="../search.html" class="contribute-header">
+            <button class="back-button">←</button>
+        </a>
+        
+    </header>
+    
+    <nav class="contribution-menu">
+        <button class="menu-item">Edit Map</button>
+        <button class="menu-item">Add Place</button>
+        <button class="menu-item">Add Review</button>
+        <button class="menu-item">Add Photo</button>
+    </nav>
+    
+    <div class="container">
+        <section class="recently-visited">
+            <h2>Recently Visited</h2>
+            <div class="place">
+                <h3>LSI 1416</h3>
+                <div class="stars" data-rating="0">☆☆☆☆☆</div>
+                <a href="../search.html" class="container">
+                    <button class="skip-button">Skip</button>
+                </a>
+
+            </div>
+            <!-- Repeat for other places -->
+        </section>
+        
+        <section class="your-reviews">
+            <h2>Your Reviews</h2>
+            <textarea class="review-box" placeholder="Your review..."></textarea>
+        </section>
+    </div>
+
+    <script src="stars.js"></script>
+</body>
+</html>
